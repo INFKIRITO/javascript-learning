@@ -100,4 +100,27 @@ const users = [
 //  console.log(Object.values(tinderUser));
 //  console.log(Object.entries(tinderUser));
 
- console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+//  console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// **************************objetcs lecture 3********************
+//de structuring => { }
+const course = {
+    name: "js-hindi",
+    price: "999",
+    courseInstructor: "aman"
+}
+
+// course.name => de-structuring
+// const {courseInstructor} = course
+//we can even give our own name to a name
+const {courseInstructor: instructor} = course
+// console.log(instructor);
+
+// *********************API********************
+// {
+//     //JSON
+//     "name": "aman",
+//     "coursename": "js-hindi",
+//     "Price": "free"
+
+// }
