@@ -12,7 +12,7 @@
 // console.log(b);
 // console.log(c);
 
-let a = 10; //using let globel scope value is first outputted and then block scope
+// let a = 10; //using let globel scope value is first outputted and then block scope
 //globel scope values can be available at block scope but block scope value is not available in global scope
 // if (true) {
 //     let a = 30
@@ -54,3 +54,4 @@ addtwo(5)  // in this there is an error and this is called hoisting in js. hoist
 const addtwo = function (num){ //these are some times called expressions
     return num + 2
 }
+
