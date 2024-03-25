@@ -69,11 +69,37 @@ const newNums = myNums
 
 // **************************reduce**********
 
-const myNums1 = [2,3,4]
+// const myNums1 = [2,3,4]
 
-const myTotal = myNums1.reduce((acc, curval) => {
-    console.log(`acc:- ${acc}and curval:- ${curval}`)
-    return acc + curval
+// const myTotal = myNums1.reduce((acc, curval) => {
+//     console.log(`acc:- ${acc}and curval:- ${curval}`)
+//     return acc + curval
    
-}, 0)
-console.log(myTotal);
+// }, 0)
+// console.log(myTotal);
+
+const shoopingCart = [
+  {
+  itemName: "js course",
+  price: 2999
+},
+{
+  itemName: "py course",
+  price: 999
+},
+{
+  itemName: "mobile dev course",
+  price: 5999
+},
+{
+  itemName: "data science course",
+  price: 12999
+},
+]
+// const priceToPay = shoopingCart.reduce( (acc, item) => item.price + acc, 0)
+const priceToPay = shoopingCart.reduce( (acc, item) => 
+{
+  return item.price + acc}, 
+0)
+
+console.log(priceToPay);
