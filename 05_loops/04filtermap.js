@@ -1,3 +1,4 @@
+// *********filter and foreach****************
 // const coading = ['js', 'ruby', 'java', 'cpp']
 
 // const values = coading.forEach( (items) => { //for each loop doesnot return any thing it only returns undefinrd
@@ -37,4 +38,42 @@ const books = [
  let bookDate = books.filter ((genr) => { 
     return genr.publish >= 1990 && genr.genre === "History"
 })
-  console.log(bookDate);
+//   console.log(bookDate);
+
+
+//   **************************************maps*********************************
+
+// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// // const newNums = myNums.map( (num) => { return num + 10 })
+
+// const newNums = []
+//  myNums.forEach((num) => {
+//    if(num != 0){
+//     newNums.push(num + 10) 
+//    }
+// })
+// console.log(newNums);
+// **********chaining************
+// chaining means we can use two or more methods togehter one after another
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const newNums = myNums
+.map( (num) => num * 10 )
+.map((num) => num + 1)
+.filter((num) => num >= 40)
+
+// console.log(newNums);
+
+
+
+// **************************reduce**********
+
+const myNums1 = [2,3,4]
+
+const myTotal = myNums1.reduce((acc, curval) => {
+    console.log(`acc:- ${acc}and curval:- ${curval}`)
+    return acc + curval
+   
+}, 0)
+console.log(myTotal);
